@@ -1,1 +1,33 @@
-
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PokeFinder</title>
+    <style>
+        body{
+            height: 100vh;
+            width: 100%;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            gap: 10px;
+        }
+        #PokemonImage{
+            height: 50vh;
+            width: auto;
+            display:none;
+        }
+    </style>
+</head>
+<body>
+    <input type="text" id="pokemonName" placeholder="Enter The Pokemon Name">
+    <button onclick="fetchData()">Find</button><br>
+    <img src="" alt="PokeFinder" id="PokemonImage">
+    <ul id="Abilities" style="list-style: none;">
+        <li ></li>
+    </ul>
+    <script src="script.js"></script>
+</body>
+</html>
